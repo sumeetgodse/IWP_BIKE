@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 40px 100px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+TEXT-ALIGN:CENTER;
+border:2px solid grey
+}
+.column:HOVER {
+  flex: 33.33%;
+  padding: 10px;
+TEXT-ALIGN:CENTER;
+border:3px solid black
+}
+
+</style>
+</head>
+<body>
+<div style="border:2px solid black;text-align:center;width:1330px;border-radius:5px;background-color:red;color:white">
+<h2>MOTO GUZZI</h2><h3>PREMIUM BIKE ACCESSORIES</h3>
+</div>
+<br>
+<ul>
+  <img src="logo.jpg" height=100px width=150px style="margin-left:180px;margin-top:3px" >
+  <li><a href="store.html">Store</a></li>
+  <li><a href="">Contact</a></li>
+  <li><a href="register.php">Login</a></li>
+  <li><a href="home.html">Home</a></li>
+</ul>
+<br>
+<h2 align=center>Delete Jacket Records</h2>
+
+<form action="delj.php" method="post" align=center>
+    <p>
+        <label >Name:</label>
+        <input type="text" name="name" >
+    </p>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
